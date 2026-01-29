@@ -1,0 +1,842 @@
+1.HTTP VS HTTPS ?
+------------------- 
+HTTP
+
+It is not secure.
+
+Data is sent in plain text.
+
+Hackers can read or change data easily.
+
+It does not use encryption.
+
+URL starts with http://
+
+No SSL/TLS certificate is used.
+
+Used for basic or non-sensitive websites.
+
+HTTPS
+
+It is secure.
+
+Data is sent in encrypted form.
+
+Hackers cannot read or change data easily.
+
+It uses encryption.
+
+URL starts with https://
+
+Uses SSL/TLS certificate.
+
+Used for banking, shopping, and login websites.
+
+2.Define web Architecture?
+------------------------------
+Web Architecture : Web Architecture is the basic structure of how the web works. It explains how a user (client), web browser, web server, and database communicate with each other to display a website.
+
+Example
+
+The client (web browser) sends a request.
+
+The web server receives the request.
+
+The application server processes it.
+
+The database retrieves user data.
+
+The response is sent back to the browser as a webpage.
+
+3.What is DNS (Domain Name System) and nbsp; ?
+-----------------------------------
+DNS (Domain Name System) : DNS is a service that translates human-readable domain names into machine-readable IP addresses.
+
+Example
+
+DNS converts the domain name into an IP address.
+
+The browser uses that IP address to connect to YouTube’s server.
+
+The website is displayed on your screen.
+
+nbsp; : nbsp; stands for Non-Breaking Space.
+nbsp; is an HTML character entity that creates a space that will not break into a new line.
+
+Simple Explanation
+Normally, the browser breaks lines at spaces.
+A non-breaking space keeps words together on the same line.
+
+Example
+Hello&nbsp;World
+
+
+The words Hello and World will stay on the same line.
+Why it is used
+To prevent line breaks between words or numbers
+To add extra spaces (HTML ignores multiple normal spaces)
+To keep formatting neat
+
+Output
+The space looks like a normal space, but the browser treats it as unbreakable. 
+
+4.Difference between ARIA and WAI ARIA ?
+-------------------------------------------
+Meaning
+
+ARIA: A general or short term used to refer to accessibility attributes in web pages.
+
+WAI-ARIA: The official accessibility specification for web content.
+
+Full Form
+
+ARIA: Accessible Rich Internet Applications
+
+WAI-ARIA: Web Accessibility Initiative – Accessible Rich Internet Applications
+
+Authority
+
+ARIA: Not officially governed; commonly used by developers.
+
+WAI-ARIA: Developed and maintained by W3C (World Wide Web Consortium).
+
+Usage
+
+ARIA: Informal name used in daily development discussions.
+
+WAI-ARIA: Used in official documentation and accessibility standards.
+
+Purpose
+
+ARIA: Improves accessibility of dynamic web content.
+
+WAI-ARIA: Defines roles, states, and properties to support screen readers and assistive technologies.
+
+5.How the backend of the screen works ?
+------------------------------------------
+The backend of a screen works in the background to handle user actions and data. When a user interacts with the screen, the frontend sends a request to the backend. The backend processes the request, applies logic, interacts with the database if needed, and sends a response back. Based on this response, the screen updates and shows the required result to the user.
+
+6.How Browser works back-end ?
+--------------------------------
+A browser works as a bridge between the user and the backend of a website. When a user enters a URL or clicks a link, the browser sends a request to the backend server through the internet. The backend server receives this request, processes it by applying business logic and interacting with the database if required, and then sends a response back to the browser. This response usually contains HTML, CSS, JavaScript, or data. The browser interprets this response, renders the content on the screen, and allows the user to interact with it.
+
+7.Explain the smallest JavaScript file ?
+-----------------------------------------
+The smallest JavaScript file is an empty JavaScript file or a file containing only the minimum code needed to perform a task.
+In practice, the smallest JavaScript file can be a file with no code at all (0 bytes), or a file that contains a single statement to perform a basic action.
+For example: alert("Hi");
+
+8.How Arithmetic operators and concatenation works in browser ?
+------------------------------------------------------------------
+Arithmetic operations and concatenation work in the browser via the browser's JavaScript engine, which interprets code: standard math uses operators like +, -, *, / on numbers, while the + operator also handles type coercion, converting operands to strings for concatenation if one is a string (e.g., 5 + "5" becomes "55"), resulting in different outcomes based on operand types.
+
+9.JAVASCRIPT CONTROL STATEMENTS – DETAILED EXPLANATION WITH OUTPUT
+===============================================================
+
+1. SWITCH STATEMENT
+------------------
+Code:
+
+let grade = "A";
+
+switch (grade) {
+  case "A": console.log("Excellent"); break;
+  case "B": console.log("Good"); break;
+  case "C": console.log("Average"); break;
+  default: console.log("Invalid grade");
+}
+
+Explanation:
+The value of variable grade is "A".
+The switch statement compares this value with each case.
+When it matches case "A", the statement runs and break stops further checking.
+
+Output Explanation:
+Since grade = "A" matches case "A", "Excellent" is printed.
+
+Output:
+Excellent
+
+
+2.IF-ELSE STATEMENT
+--------------------
+Code:
+
+let number = 5;
+
+if (number % 2 === 0) {
+  console.log("Even number");
+} else {
+  console.log("Odd number");
+}
+
+
+Explanation:
+The condition checks whether the number is divisible by 2.
+
+Output Explanation:
+Number is 5, which is not divisible by 2, so the else-block executes.
+
+Output:
+Odd number
+
+
+3. NESTED IF-ELSE STATEMENT
+----------------------------
+Code:
+
+let marks = 85;
+if(marks >= 90) {
+  console.log("Grade A");
+} else if(marks >= 75) {
+  console.log("Grade B");
+} else {
+  console.log("Grade C");
+}
+
+Explanation:
+Multiple conditions are checked one by one until a true condition is found.
+
+Output Explanation:
+Marks are 85. It is not >= 90, but it is >= 75, so Grade B is printed.
+
+Output:
+Grade B
+
+
+4.WHILE LOOP
+-------------
+
+Code:
+
+let i = 5;
+
+while (i >= 1) {
+  console.log(i);
+  i--;
+}
+
+
+Explanation:
+The loop runs as long as i is greater than or equal to 1.
+
+Output Explanation:
+i starts at 5 and decreases by 1 after each loop until it becomes 0, so values 5, 4, 3, 2, and 1 are printed.
+
+Output:
+
+5
+4
+3
+2
+1
+
+
+5. DO-WHILE LOOP 
+-----------------
+
+Code:
+
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while(i <= 3);
+
+Explanation:
+The do-while loop executes at least once before checking the condition.
+
+Output Explanation:
+The loop prints numbers 1 to 3.
+
+Output:
+1 2 3
+
+
+6. FOR LOOP
+------------
+Code:
+
+for(let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+Explanation:
+The for loop initializes, checks condition, and increments in one line.
+
+Output Explanation:
+The loop runs from 1 to 5, printing each number.
+
+Output:
+1 2 3 4 5
+
+
+10.WORKING WITH FIVE DIFFERENT SETS OF STRINGS IN JAVASCRIPT?
+--------------------------------------------------------------
+
+INTRODUCTION
+
+In JavaScript, strings are used to store text data such as usernames, messages, and instructions shown on web pages. A string is a collection of characters enclosed in quotes. JavaScript offers many built-in properties and methods that make working with strings easy and efficient.
+In this assignment, we explore five different string operations with examples, explanations, and outputs.
+
+STRING SET 1: BASIC STRING OPERATION (CONCATENATION)
+-----------------------------------------------------
+Program:
+let firstName = "Good";
+let secondName = "Evening";
+let greeting = firstName + " " + secondName;
+console.log(greeting);
+
+Explanation:
+Concatenation is the process of joining strings together. The + operator is used to combine multiple strings. A space is added to separate the words properly.
+
+Output:
+Good Evening
+
+STRING SET 2: STRING LENGTH AND LOWERCASE CONVERSION
+--------------------------------------------------------
+Program:
+let word = "PROGRAMMING";
+console.log(word.length);
+console.log(word.toLowerCase());
+
+Explanation:
+The length property gives the total number of characters in a string. The toLowerCase() method converts all characters into lowercase letters. The original string is not changed.
+
+Output:
+11
+programming
+
+STRING SET 3: EXTRACTING PART OF A STRING
+-------------------------------------------
+Program:
+let title = "Learning JavaScript";
+let result = title.substring(9, 19);
+console.log(result);
+
+Explanation:
+The substring() method extracts characters from a string using start and end positions. The starting index is included, and the ending index is excluded.
+
+Output:
+JavaScript
+
+STRING SET 4: CHANGING TEXT USING REPLACE
+-------------------------------------------
+Program:
+let text = "I study HTML";
+let updatedText = text.replace("HTML", "CSS");
+console.log(updatedText);
+
+Explanation:
+The replace() method replaces a specified word with another word. It modifies only the first matching value in the string.
+
+Output:
+I study CSS
+
+STRING SET 5: CONVERTING STRING INTO ARRAY
+-------------------------------------------
+Program:
+let items = "pen pencil eraser scale";
+let list = items.split(" ");
+console.log(list);
+
+Explanation:
+The split() method divides a string into an array based on a separator. Here, the string is split wherever a space occurs.
+
+Output:
+["pen", "pencil", "eraser", "scale"]
+
+ADDITIONAL STRING OPERATIONS IN JAVASCRIPT
+===========================================
+
+CONVERTING STRING TO UPPERCASE
+-------------------------------
+Program:
+
+let city = "delhi";
+console.log(city.toUpperCase());
+
+Output:
+DELHI
+
+REMOVING UNWANTED SPACES
+--------------------------
+Program:
+
+let name = "   Payal   ";
+console.log(name.trim());
+
+Output:
+Payal
+
+ACCESSING A CHARACTER BY INDEX
+-------------------------------
+Program:
+
+let course = "WebDevelopment";
+console.log(course[3]);
+
+Output:
+D
+
+CHECKING WORD PRESENCE IN A STRING
+------------------------------------
+Program:
+
+let sentence = "JavaScript is easy";
+console.log(sentence.includes("easy"));
+
+Output:
+true
+
+CONCLUSION
+-------------
+JavaScript provides many useful string methods that help developers manage and modify text easily. Functions such as concatenation, substring extraction, replacing text, splitting strings, and changing letter case are essential in everyday programming. Understanding these concepts helps in writing cleaner code and improving user interaction in web applications.
+
+
+11.FUNCTION PROTOTYPES IN JAVASCRIPT (FIVE SCENARIOS)?
+=======================================================
+
+INTRODUCTION
+
+In JavaScript, functions act as objects and each function contains a special property called prototype.
+The prototype is used to attach common properties and methods that can be shared by all objects created from that function.
+This helps save memory because methods are not recreated for every object.
+Prototype-based inheritance is a fundamental feature of JavaScript.
+This assignment explains function prototypes using five different practical scenarios.
+
+SCENARIO 1: ADDING A METHOD THROUGH PROTOTYPE
+----------------------------------------------
+Program:
+function Student(name) {
+  this.name = name;
+}
+
+Student.prototype.introduce = function () {
+  return "Hi, I am " + this.name;
+};
+
+let s1 = new Student("Anita");
+console.log(s1.introduce());
+
+Explanation:
+The introduce() method is added to the prototype of the Student function.
+All objects created using Student can access this method.
+The method is stored only once and shared by all instances.
+
+Output:
+Hi, I am Anita
+
+SCENARIO 2: SHARING A COMMON PROPERTY USING PROTOTYPE
+------------------------------------------------------
+Program:
+function Mobile(brand) {
+  this.brand = brand;
+}
+
+Mobile.prototype.simSlots = 2;
+
+let m1 = new Mobile("Samsung");
+let m2 = new Mobile("Apple");
+
+console.log(m1.simSlots);
+console.log(m2.simSlots);
+
+Explanation:
+The simSlots property is defined in the prototype, not inside the constructor.
+Both objects access the same property from the prototype, showing property sharing.
+
+Output:
+2
+2
+
+SCENARIO 3: OVERRIDING A PROTOTYPE VALUE
+----------------------------------------
+Program:
+function Vehicle(type) {
+  this.type = type;
+}
+
+Vehicle.prototype.speed = "Normal";
+
+let bike = new Vehicle("Bike");
+bike.speed = "Fast";
+
+console.log(bike.speed);
+
+Explanation:
+The speed property is initially defined in the prototype.
+When the object defines its own speed, it overrides the prototype value.
+
+Output:
+Fast
+
+SCENARIO 4: ADDING PROTOTYPE METHOD AFTER OBJECT CREATION
+----------------------------------------------------------
+Program:
+function Account(user) {
+  this.user = user;
+}
+
+let acc1 = new Account("Payal");
+
+Account.prototype.getStatus = function () {
+  return "Account is active";
+};
+
+console.log(acc1.getStatus());
+
+Explanation:
+Even though the method is added after creating the object, it is accessible.
+JavaScript checks the prototype chain while executing methods.
+
+Output:
+Account is active
+
+SCENARIO 5: VERIFYING PROTOTYPE CONNECTION
+--------------------------------------------
+Program:
+function Course(name) {
+  this.name = name;
+}
+
+let c1 = new Course("Web Development");
+
+console.log(Course.prototype.isPrototypeOf(c1));
+
+Explanation:
+The isPrototypeOf() method verifies whether an object exists in another object's prototype chain.
+
+Output:
+true
+
+ADVANTAGES OF USING PROTOTYPES
+------------------------------------
+
+Saves memory by sharing methods
+Prevents duplicate code
+Supports inheritance
+Improves execution performance
+Makes programs reusable and organized
+
+CONCLUSION
+------------
+
+Function prototypes play a vital role in JavaScript by allowing efficient sharing of properties and methods.
+They help in reducing memory usage, improving performance, and implementing inheritance.
+A good understanding of prototypes is necessary to build efficient and scalable JavaScript applications.
+
+12. Define CDN?
+---------------------
+CDN (Content Delivery Network) is a network of distributed servers located in different geographic locations that work together to deliver web content to users faster.
+A CDN stores copies of website content (like images, videos, CSS, and JavaScript files) on multiple servers around the world and serves them from the nearest server to the user.
+
+Example:
+If your website is hosted in India and a user opens it from the USA, a CDN delivers the content from a nearby USA server instead of India, making the site load faster.
+
+Benefits of CDN:
+
+Faster website loading
+Reduced server load
+Better performance for global users
+Improved reliability and availability
+
+13.Create an array in all the ways, work them throw all the loops?
+===================================================================================
+
+ARRAY PROGRAM USING for LOOP (WITHOUT FUNCTION) 
+-------------------------------------------------
+Find sum of array elements
+let arr = [5, 10, 15];
+let sum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  sum = sum + arr[i];
+}
+console.log(sum);
+
+
+Steps:
+sum starts at 0
+Adds each element to sum
+
+Output:
+30
+
+
+ARRAY PROGRAM USING FOR LOOP (USING FUNCTION)
+-----------------------------------------------
+Print all array elements
+function printArray() {
+    let arr = [10, 20, 30];
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+
+printArray();
+
+
+Steps:
+Function created
+Array defined
+Loop prints elements
+
+Output:
+10
+20
+30
+
+
+
+ARRAY PROGRAM USING WHILE LOOP (WITHOUT FUNCTION)
+-------------------------------------------------
+
+Print Index Numbers
+let arr = [10, 20, 30];
+let i = 0;
+
+while (i < arr.length) {
+  console.log(i);
+  i++;
+}
+
+
+Steps:
+Array is created.
+Loop prints index.
+Index increases.
+
+Output Explanation:
+Array index numbers shown.
+
+Output:
+0
+1
+2
+
+
+ARRAY PROGRAM USING WHILE LOOP (USING FUNCTION)
+-------------------------------------------------
+
+Print Array Elements
+let arr = [3, 6, 9];
+let i = 0;
+
+while (i < arr.length) {
+  console.log(arr[i]);
+  i++;
+}
+
+
+Steps:
+Start from index 0
+Print each value
+
+Output Explanation:
+All elements are displayed.
+
+Output:
+3
+6
+9
+
+
+ARRAY PROGRAM USING DO while LOOP (WITHOUT FUNCTION)
+----------------------------------------------------
+
+Print Only First Element
+let arr = [11, 22, 33];
+let i = 0;
+
+do {
+  console.log(arr[i]);
+  i++;
+} while (i < 1);
+
+
+Steps:
+Array is created.
+Loop runs once.
+First element printed.
+
+Output Explanation:
+First value shown.
+
+Output:
+11
+
+
+ARRAY PROGRAM USING DO while LOOP (USING FUNCTION)
+----------------------------------------------------
+
+Print all array elements
+function printArray() {
+    let arr = [10, 20, 30];
+    let i = 0;
+
+    do {
+        console.log(arr[i]);
+        i++;
+    } while (i < arr.length);
+}
+
+printArray();
+
+
+Steps:
+Function created
+Start index at 0
+Print element
+Increase index
+
+Output:
+10
+20
+30
+
+Explanation: All array values printed.
+
+
+
+14.Explore  for Each(), map(),  filter(), sort()
+------------------------------------------------------
+Below is a simple and clear explanation of map(), for Each(), filter(), and sort() in JavaScript with easy examples 👇
+
+1. for Each()
+
+Purpose:
+Used to loop through each element of an array.
+It does not return a new array.
+
+Example:
+let numbers = [1, 2, 3, 4];
+numbers. for Each(function(num) {
+  console.log(num * 2);
+});
+
+Output:
+2
+4
+6
+8
+
+Use for Each() when you just want to perform an action (print, update, log).
+
+2. map()
+
+Purpose:
+Used to transform each element of an array.
+It returns a new array.
+
+Example:
+let numbers = [1, 2, 3, 4];
+let result = numbers. Map(function(num) {
+  return num * 2;
+});
+console.log(result);
+
+Output:
+[2, 4, 6, 8]
+
+Use map() when you want a new array with modified values.
+
+3. filter()
+
+Purpose:
+Used to select elements based on a condition.
+It returns a new array with matching elements.
+
+Example:
+let numbers = [1, 2, 3, 4, 5];
+let even Numbers = numbers. Filter(function(num) {
+  return num % 2 === 0;
+});
+console.log(even Numbers);
+
+Output:
+[2, 4]
+
+Use filter() when you want to remove unwanted elements.
+
+4. sort()
+
+Purpose:
+Used to sort array elements.
+It modifies the original array.
+
+Example (Numbers):
+let numbers = [5, 2, 9, 1];
+numbers. Sort(function(a, b) {
+  return a - b; // ascending order
+});
+console.log(numbers);
+
+Output:
+[1, 2, 5, 9]
+
+Example (Strings):
+let names = ["Ram", "Aman", "Ravi"];
+
+names. Sort();
+console.log(names);
+
+Output:
+["Aman", "Ram", "Ravi"]
+
+Use sort() to arrange data ascending or descending.
+
+15.Explain DOM manipulation ?
+------------------------------
+DOM (Document Object Model) represents the HTML structure of a web page as a tree of objects.
+DOM manipulation means using JavaScript to access, change, add, or remove HTML elements and their content, styles, or attributes while the page is running.
+
+Why DOM Manipulation is needed
+--------------------------------
+Update content without reloading the page
+Handle user actions (click, input, submit)
+Change styles dynamically
+Create interactive web pages
+
+How DOM Manipulation works
+----------------------------
+JavaScript talks to the browser through the DOM API to:
+Select elements
+Change content or style
+Add or remove elements
+
+16.Explain NPM and NPX ?
+---------------------------------
+
+1. NPM (Node Package Manager)
+NPM is a tool used to install, manage, and share JavaScript packages (libraries).
+
+What NPM does:
+
+Installs libraries (React, Express, Lodash, etc.)
+Manages project dependencies
+Keeps versions in package.json
+Helps reuse code
+
+Important files:
+
+package.json → lists project details and dependencies
+
+node_modules → folder where packages are stored
+
+2. NPX (Node Package execute)
+NPX is a tool used to run Node packages without installing them globally.
+
+What NPX does:
+Executes packages directly
+No global installation needed
+Always runs the latest version
+Useful for one-time commands
+
+
+
+
+
+
+

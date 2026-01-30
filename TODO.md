@@ -1,0 +1,6 @@
+- [x] Change colors in Skills.css to purple theme (#8a2be2)
+- [x] Add fade-in animation for skills section
+- [x] Add hover effect on skill-item (scale up)
+- [x] Add pulse animation for skill icons on hover
+- [x] Enhance progress bar fill animation with delays
+- [ ] Test the app to verify new styles and animations
